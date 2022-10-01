@@ -1,0 +1,7 @@
+ <ol>  
+  
+	<li>GTX 1080</li>
+	<li>GTX 1050</li>
+	<li>Radeon R9 290X <img src="imagens/radeon.png" height="60" width="60"></li>
+	<li>RADEON RX 560</li>
+	</ol>
