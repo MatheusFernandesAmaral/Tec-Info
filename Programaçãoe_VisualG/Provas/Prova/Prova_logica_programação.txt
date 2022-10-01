@@ -1,0 +1,265 @@
+Nome:Matheus Fernandes Amaral
+Turma manha:Tif
+Prova_Logica_Matheus Fernandes
+Algoritmo "semnome"
+//1) 
+Var
+sal1,sal2,sab1,sab2,re,re1:real
+nome1,nome2,nomei,cargo1,cargo2:caracter
+Inicio
+Escreva("Digite o nome da empresa : ")
+leia(nomei)
+Escreva("Digite o nome do 1° funcionario : ")
+leia(nome1)
+Escreva("Digite o cargo do 1° funcionario :")
+leia(cargo1)
+Escreva("Digite o salario do 1° funcionario : ")
+leia(sab1)
+sal1<-sab1+(sab1*10)/100
+ limpatela
+Escreva("Digite o nome do 2° funcionario : ")
+leia(nome2)
+Escreva("Digite o cargo do 2° funcionario :")
+leia(cargo2)
+Escreva("Digite o salario do 2° funcionario : ")
+leia(sab2)
+sal2<-sab2+(sab2*12)/100
+
+limpatela
+Escreval("                    Empresa : ",nomei)
+Escreval("")
+Escreval("        O Funcionario : ",nome1)
+Escreval("        O cargo do funcionario na empresa ",nomei," : ",cargo1)
+Escreval("        O salario antes do reajuste era : ",sab1)
+Escreval("        O salario apos o reajuste é : ",sal1)
+
+Escreval("")
+Escreval("")
+Escreval("        O Funcionario : ",nome2)
+Escreval("        O cargo do funcionario na empresa ",nomei," : ",cargo2)
+Escreval("        O salario antes do reajuste era : ",sab2)
+Escreval("        O salario apos o reajuste é : ",sal2)
+
+Fimalgoritmo
+
+
+
+Algoritmo "semnome"
+//2)
+Var
+v1,v2,soma,sub,prod,media:real
+
+Inicio
+Escreva("Digite o 1° numero : ")
+leia(v1)
+Escreva("Digite o 2° numero : ")
+leia(v2)
+soma<-(v1+v2)
+sub<-(v1-v2)
+prod<-(v1*v2)
+media<-(v1+v2)/2
+
+
+Escreval("A soma dos dois valores é = ",soma)
+Escreval("A subtração dos dois valores é = ",sub)
+Escreval("A multiplicação dos dois valores é = ",prod)
+EscrevaL("A media é : ",media)
+
+se media<4 entao
+Escreva("MÉDIA RUIM")
+senao
+Escreva("MÉDIA BOA")
+fimse
+
+Fimalgoritmo
+
+Algoritmo "semnome"
+//3) ESCREVA UM PROGRAMA PARA CALCULAR A SOMA ENTRE TODOS OS NÚMEROS COMPREENDIDOS
+//ENTRE DOIS NÚMEROS LIDOS DO TECLADO. (EX.: 8...12 = 50)
+
+Var
+cont,cont1,soma:real
+
+Inicio
+escreva("Digite o numero inicial : ")
+leia(cont)
+escreva("Digite o numero final : ")
+leia(cont1)
+enquanto cont<=cont1 faca
+soma<-soma+cont
+cont<-cont+1
+fimenquanto
+Escreva("A soma total é = ",soma)
+Fimalgoritmo
+
+
+
+
+Algoritmo "semnome"
+//4)
+
+Var
+sal,sab,comi,val,num,valt,cont:real
+
+Inicio
+cont<-1
+enquanto cont<=3 faca
+limpatela
+Escreval("Funcionario : ",cont)
+escreva("Digite o salario fixo : ")
+leia(sab)
+Escreva("Digite quantos carros o vendedor",cont," vendeu : ")
+leia(num)
+Escreva("Digite o valor dos carros : ")
+leia(val)
+valt<-sab+((num*val)*5)/100
+
+escreval("O salario final é de : ",valt)
+leia(sal)
+
+cont<-cont+1
+fimenquanto
+Fimalgoritmo
+
+
+
+
+Algoritmo "semnome"
+//5)
+Var
+cont,par,impar,imp,pr,num:real
+
+Inicio
+cont<-21
+
+enquanto cont<=72 faca
+
+se cont mod 2=0 entao
+par<-par+1
+pr<-pr+cont
+senao
+impar<-impar+1
+imp<-imp+cont
+fimse
+
+cont<-cont+1
+fimenquanto
+
+escreval("A soma dos numeros pares de 21 a 72 = ",pr)
+Escreval("A quantidade de numeros pares = ",par)
+escreval("A soma dos numeros impares de 21 a 72 = ",imp)
+Escreval("A quantidade de numeros impares = ",impar)
+
+
+Fimalgoritmo
+
+
+
+
+
+Algoritmo "semnome"
+//6) ESCREVA UM PROGRAMA QUE LEIA VÁRIOS NÚMEROS POSITIVOS E ESCREVA A MÉDIA ENTRE
+//OS VALORES LIDOS. O PROGRAMA DEVE ENCERRAR QUANDO O VALOR LIDO FOR NEGATIVO.
+
+Var
+num,cont,media,soma:real
+
+Inicio
+cont<-1
+enquanto cont<=3 faca
+media<-1
+escreva("Digite um numero positivo : ")
+leia(num)
+se num < 0 entao
+cont<-4
+senao
+
+soma<-soma+num
+fimse
+media<-media+1
+ fimenquanto
+ media<-soma/media
+ escreva("A media dos numeros lidos = ",media)
+Fimalgoritmo
+
+
+
+
+Algoritmo "semnome"
+//7)
+Var
+alts,ids,alturam,alt,id,idadem,al,ida,cont:real
+
+Inicio
+cont<-1
+enquanto cont<=4 faca
+Escreva("Digite a altura do aluno ",cont," em cm : ")
+leia(alt)
+Escreva("Digite a idade do aluno ",cont," : ")
+leia(id)
+alts<-alts+alt
+ids<-ids+id
+se alt>=175 entao
+ al<-al+1
+ fimse
+se id>=18 entao
+ ida<-ida+1
+ fimse
+ cont<-cont+1
+fimenquanto
+limpatela
+cont<-cont-1
+idadem<-ids/cont
+alturam<-alts/cont
+Escreval("A media da idade dos alunos = ",idadem)
+Escreval("A media da altira dos alunos = ",alturam)
+Escreval("A quantidade de alunos com idade >=18 anos : ",ida)
+Escreval("A quantidade de alunos com altura >=175 cm : ",al)
+
+Fimalgoritmo
+
+
+
+
+
+
+Algoritmo "semnome"
+//8)
+Var
+num,par,impar,imp,pr,mediap,mediai,total,cont,num1:real
+Inicio
+cont<-1
+num1<-20
+enquanto cont<=20 faca
+limpatela
+Escreval("                     Digite ",num1," numeros")
+num1<-num1-1
+Escreva("Digite um numeros : ")
+leia(num)
+se num mod 2=0 entao
+par<-par+1
+pr<-pr+num
+senao
+impar<-impar+1
+imp<-imp+num
+fimse
+total<-total+num
+cont<-cont+1
+
+fimenquanto
+limpatela
+cont<-cont-1
+mediap<-pr/par
+mediai<-imp/impar
+Escreval("A soma dos numeros pares = ",pr)
+Escreval("A media dos numeros pares  =",mediap)
+Escreval("A quantidade de numeros pares = ",par)
+
+Escreval("A media dos numeros impares  =",mediai)
+Escreval("A soma dos numeros impares = ",imp)
+Escreval("A quantidade de numeros impares = ",impar)
+
+Escreval("A soma de todos os numeros lidos = ",total)
+
+
+Fimalgoritmo

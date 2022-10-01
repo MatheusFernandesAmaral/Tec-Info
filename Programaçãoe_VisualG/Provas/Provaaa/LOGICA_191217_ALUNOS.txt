@@ -1,0 +1,316 @@
+
+
+EXECUTAR OS ALGORITMOS ABAIXO(INDIVIDUAL) E SALVAR OS CÓDIGOS NO BLOCO DE NOTAS - ABAIXO DE CADA QUESTAO.
+ENVIAR POR EMAIL PARA: julio@espacoinclusione.com.br
+
+COM O ASSUNTO: COLOCAR SEU NOME - LOGICA 20/12/17
+
+1.Determinar se um número é par ou ímpar e positivo ou negativo
+
+Algoritmo "semnome"
+Var
+n:real
+
+Inicio
+Escreva("Digite um numero : ")
+leia(n)
+se n >0 entao
+Escreval("Numero ",n," : positivo")
+senao
+Escreval("Numero ",n," : negativo")
+fimse
+
+se n mod 2 =0 entao
+Escreval("Numero ",n," : par")
+senao
+Escreval("Numero ",n," : impar")
+fimse
+
+
+Fimalgoritmo
+
+2.Ler três notas de um aluno, calcular a média e informar se ele foi aprovado (Média >=7), reprovado (Média < 7) ou aprovado com louvor (Média = 10)
+
+Algoritmo "semnome"
+Var
+n1,n2,n3,media:real
+x:inteiro
+
+Inicio
+para x de 1 ate 3 faca
+Escreva("Digite a ",x,"° nota do aluno : ")
+leia(n1)
+n2<-n2+n1
+
+fimpara
+media<-n2/3
+
+se media=10 entao
+Escreval("Aprovado com louvor")
+senao
+Se media >= 7 entao
+ escreval("Aprovado")
+senao
+Escreval("Reprovado")
+fimse
+fimse
+
+Escreval("Media : ",media )
+
+
+Fimalgoritmo
+
+3.Fazer um algoritmo que:
+Leia varios números contendo cada uma a idade de uma pessoa.
+Condicao de parada do algoritmo-quando digitar a idade igual a zero.
+Calcule e escreva a idade média deste grupo de pessoas.
+Escreva também a maior idade e a menor
+
+Algoritmo "semnome"
+Var
+idade,maior,media,menor:real
+ cont:inteiro
+Inicio
+menor<-1000
+repita
+
+Escreval("Digite sua idade : ")
+leia(idade)
+se idade > 0 entao
+
+media<-media+idade
+
+se idade > maior entao
+maior <-idade
+fimse
+
+se idade <menor entao
+menor<-idade
+fimse
+cont<-cont+1
+fimse
+
+ate idade = 0
+
+media<-media/cont
+Escreval("A media das idades : ",media)
+Escreval("A maior idade : ",maior)
+Escreval("A menor idade : ",menor)
+
+
+Fimalgoritmo
+
+4.Faça um algoritmo que calcule a soma dos números inteiros de 1 a 100. 
+
+Algoritmo "semnome"
+Var
+x,soma:inteiro
+
+Inicio
+para x de 1 ate 100 faca
+soma<-soma+x
+fimpara
+
+Escreva("A soma dos numeros de 1 a 100 : ",soma)
+
+
+Fimalgoritmo
+
+5.Numa eleição existem três candidatos identificados pelos números 1,2 e 3.
+Faça um algoritmo que compute o resultado de umaeleição.Inicialmente o programa deve pedir o número total de votantes. 
+Em seguida, deve pedir para cada votante votar(informando o numero do candidato)e ao final mostrar o número de votos de cada candidato.
+
+Algoritmo "semnome"
+Var
+n,cand,c1,c2,c3,x:inteiro
+
+Inicio
+Escreva("Digite o numero de votantes : ")
+leia(n)
+para x de 1 ate n faca
+Escreval("Digite : 1 para 1° cadidato ")
+Escreval("Digite : 2 para 2° cadidato ")
+Escreval("Digite : 3 para 3° cadidato ")
+Escreval("Digite : ")
+leia(cand)
+
+Escolha cand
+caso 1
+c1<-c1+1
+caso 2
+c2<-c2+1
+caso 3
+c3<-c3+1
+
+fimescolha
+limpatela
+fimpara
+
+Escreval()
+
+Escreval("1° candidato numero de votos : ",c1)
+Escreval("2° candidato numero de votos : ",c2)
+Escreval("3° candidato numero de votos : ",c3)
+
+Fimalgoritmo
+
+6.Tem-se um conjunto de dados contendo a altura e o sexo (masculino, feminino) de 10 pessoas. Fazer um algoritmo que calcule e escreva:
+A maior e a menor altura do grupo;
+A média de altura das mulheres;
+O número de homens;
+
+Algoritmo "semnome"
+Var
+alt,maior,menor,media,m:real
+x,n:inteiro
+sexo:caracter
+Inicio
+menor<-1000
+para x de 1 ate 10 faca
+Escreva("Digite sexo(M/F) : ")
+leia(sexo)
+
+Escreva("Digite altura : ")
+leia(alt)
+
+
+se alt>maior entao
+maior<-alt
+fimse
+
+se alt < menor entao
+menor<-alt
+fimse
+
+se sexo = "f" entao
+media<-media+alt
+n<-n+1
+fimse
+
+se sexo="m" entao
+m<-m+1
+fimse
+fimpara
+Escreval()
+media<-media/n
+
+Escreval("A maior altura do grupo : ",maior)
+Escreval("A menor altura do grupo : ",menor)
+Escreval("A media da altura das mulheres : ",media)
+Escreval("A quantidade de homens : ",m)
+Fimalgoritmo
+
+7.Faça um programa que tenha a seguinte escolha:
+conforme o menu abaixo: (ler 3 notas do aluno)
+1 - Para executar a (Media com 2 alunos)
+2 - Para executar a (Média com 4 alunos)
+a) Nome da escola
+a) Nomes do alunos;
+b) As notas que compõem a média;
+c) E a média obtida dos alunos.
+
+Algoritmo "semnome"
+Var
+x,n1,n2,soma,z:inteiro
+media:real
+escol,escola,nome:caracter
+Inicio
+Escreva("Digite o nome da escola ")
+leia(escola)
+
+Escreval()
+Escreval("Digite 2 para media com dois alunos ou")
+Escreval("Digite 4 para media com quatro alunos : ")
+leia(escol)
+
+escolha escol
+
+caso "2"
+para x de 1 ate 2 faca
+Escreval("Media com dois alunos")
+Escreva("Digite o nome do ",x,"° aluno : ")
+leia(nome)
+Escreva("Digite a nota 1 :  ")
+leia(n1)
+Escreva("Digite a nota 2 : ")
+leia(n2)
+soma<-n1+n2
+media<-soma/2
+Escreval()
+Escreval("Escola : ",escola)
+Escreval("Aluno : ",nome)
+Escreval("As notas : ",n1,n2)
+Escreva("A media : ",media)
+Escreval()
+leia(z)
+limpatela
+fimpara
+
+
+caso "4"
+Escreval("Media com quatro alunos")
+para x de 1 ate 4 faca
+Escreva("Digite o nome do ",x,"° aluno : ")
+leia(nome)
+Escreva("Digite a nota 1 : ")
+leia(n1)
+Escreva("Digite a nota 2 : ")
+leia(n2)
+
+soma<-n1+n2
+media<-soma/2
+Escreval()
+Escreval("Escola : ",escola)
+Escreval("Aluno : ",nome)
+Escreval("As notas : ",n1,n2)
+Escreva("A media : ",media)
+Escreval()
+leia(z)
+limpatela
+
+fimpara
+
+fimescolha
+Fimalgoritmo
+
+8.Construir um programa que leia um grupo de 12 valores que representam as idades das pessoas e depois mostre:
+A soma das idades;
+A Media das Idades;
+A Quantidade de pessoas com idades <=18 anos;
+A medias das idades das pessoas com <=18 anos.
+
+Algoritmo "semnome"
+Var
+id:vetor[1..12]de real
+media,soma,maior,mediam:real
+i,cont:inteiro
+Inicio
+para i de 1 ate 12 faca
+Escreva("Digite as idades : ")
+leia(id[i])
+ soma<-soma+id[i]
+
+ se id[i] <=18 entao
+ cont<-cont+1
+ mediam<-mediam+id[i]
+ fimse
+ 
+fimpara
+media<-soma/12
+mediam<-mediam/cont
+Escreval("A soma das idades : ",soma)
+Escreval("A media das idades : ",media)
+Escreval("A quantidade de pessoas com idade <= 18 : ",cont)
+Escreval("A meida das idades das pesssoas com idade <= 18 : ",mediam)
+
+Fimalgoritmo
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,231 @@
+Nome:Mathueus Fernandes 
+Turma:TIF Manha
+
+
+01) Faça um programa que leia os números de 01 a 16 e faça a seguinte operação: o quadrado e a soma dos números lido e mostre na tela o resultado.
+(Mostrar na tela quadrado  = número por número)
+(Mostrar na tela soma  = número por número)
+
+Algoritmo "1"
+
+Var
+x:inteiro
+quadr,soma:real
+
+Inicio
+para x de 1 ate 16 faca
+quadr<-x*x
+soma<-x+x
+
+Escreval("O quadrado dos numeros lidos : ",quadr)
+Escreval("A soma dos numeros lidos : ",soma)
+fimpara
+
+Fimalgoritmo
+
+02) Elabore um programa que leia os números de 200 a 221 e faça a seguinte operação:
+a) A soma dos números pares lidos e a soma dos números ímpares.
+b) A quantidade de valores lidos de pares e ímpares.
+No final mostrar na tela os resultados.
+
+Algoritmo "semnome"
+Var
+pares,impares,x,somap,somai:inteiro
+Inicio
+para x de 200 ate 221 faca
+se x mod 2=0 entao
+somap<-somap+x
+pares<-pares+1
+senao
+somai<-somai+x
+impares<-impares+1
+fimse
+
+fimpara
+Escreval()
+
+Escreval("A soma dos numeros pares lidos : ",somap)
+Escreval("A soma dos numeros impares lidos : ",somai)
+Escreval("A quantidade de numeros pares : ",pares)
+Escreval("A quantidade de numeros impares : ",impares)
+
+Fimalgoritmo
+
+03) Escreva um programa que leia o nome, código de um funcionário e seu respectivo salário bruto. Após, calcule os descontos, sendo: (Executar este procedimento para um grupo de 08 funcionários).
+a) 8,5% para INSS;
+b) 10% para IRRF
+c) 1,5% para Sindicato
+d) Ao final, informe o código, nome e salário líquido do funcionário.
+
+Algoritmo "semnome"
+
+Var
+x,z:inteiro
+sab,sal:real
+nome,cod:caracter
+
+Inicio
+para x de 1 ate 8 faca
+Escreva("Digite seu nome : ")
+leia(nome)
+Escreva("Digite seu codigo : ")
+leia(cod)
+Escreva("Digite seu salario bruto : ")
+leia(sab)
+
+sal<-sab-(sab*0.20)
+
+Escreval()
+
+Escreval("Nome : ",nome)
+Escreval("Codigo : ",cod)
+Escreval("Salario liquido : ",sal)
+Escreval()
+leia(z)
+fimpara
+
+
+Fimalgoritmo
+
+04) Fazer um programa que leia uma Matriz de ordem 4x4, e faça as seguintes operações:
+a) Somatório de todos os elementos da Matriz;
+b) Somatório dos elementos Diagonal Principal;
+c) Somatório dos valores pares da Diagonal Principal;
+d) Somatório dos valores ímpares da Diagonal Principal;
+e) Somatório dos elementos da Diagonal Secundária;
+f) Somatório dos elementos da linha 3;
+g) Somatório dos elementos da coluna 4;
+h) Somatório dos elementos da linha 3 com os elementos da coluna 4;
+i) Ao final mostrar todos os resultados (separados).
+
+Algoritmo "semnome"
+Var
+v:vetor[1..4,1..4]de real
+i,j:inteiro
+somat,somai3,somaj4,somal,somad,somap,somai,somas:real
+
+Inicio
+para i de 1 ate 4 faca
+
+para j de 1 ate 4 faca
+
+Escreva("Digite os valores : ")
+leia(v[i,j])
+
+somat<-v[i,j] + somat
+
+se i=j entao
+somad<-v[i,j]+somad
+
+se v[i,j] mod 2=0 entao
+somap<-somap+v[i,j]
+senao
+somai<-somai+v[i,j]
+fimse
+fimse
+
+
+se j=5-i entao
+somas<-somas+v[i,j]
+fimse
+
+se i=3 entao
+somai3<-v[i,j] + somai3
+fimse
+
+se j=4 entao
+somaj4<-v[i,j] + somaj4
+fimse
+
+
+fimpara
+fimpara
+somal<-somai3+somaj4
+
+
+Escreval("")
+Escreval(" Somatório de todos os elementos da Matriz : ",somat)
+Escreval(" Somatório dos elementos Diagonal Principal : ",somad)
+Escreval(" Somatório dos valores pares da Diagonal Principal : ",somap)
+Escreval(" Somatório dos valores ímpares da Diagonal Principal : ",somai)
+Escreval(" Somatório dos elementos da Diagonal Secundária : ",somas)
+Escreval(" Somatório dos elementos da linha 3 : ",somai3)
+Escreval(" Somatório dos elementos da coluna 4 : ",somaj4)
+Escreval(" Somatório dos elementos da linha 3 com os elementos da coluna 4; ",somal)
+
+Fimalgoritmo
+
+05) Fazer um programa que leia um vetor de 10 elementos e
+calcule:
+A)soma de todos os valores;
+B)A soma dos valores pares;
+C)A soma dos valores impares.
+
+Algoritmo "semnome"
+Var
+v:vetor[1..10]de real
+i:inteiro
+somap,somai,soma:real
+
+Inicio
+para i de 1 ate 10 faca
+Escreva("Digite os valores : ")
+leia(v[i])
+
+soma<-soma+v[i]
+
+se v[i] mod 2=0 entao
+somap<-somap+v[i]
+senao
+somai<-somai+v[i]
+fimse
+
+fimpara
+Escreval()
+
+Escreval("A soma total : ",soma)
+Escreval("A soma dos pares : ",somap)
+Escreval("A soma dos impares : ",somai)
+
+Fimalgoritmo
+
+06)Fazer um programa que leia uma Matriz de ordem 5x5, e também ler um valor separado via teclado e calcule:
+A) A multiplicação dos elementos da matriz pelo numero lidos do teclado. 1x1
+Mostrar a nova matriz.
+
+Algoritmo "semnome"
+Var
+v:vetor[1..5,1..5]de real
+i,j:inteiro
+m,p:real
+Inicio
+para i de 1 ate 5 faca
+ para j de 1 ate 5 faca
+ 
+ Escreva("Digite os valores : ")
+ leia(v[i,j])
+ 
+ fimpara
+fimpara
+
+Escreval()
+Escreval("Digite um numero : ")
+leia(m)
+Escreval()
+
+
+para i de 1 ate 5 faca
+ para j de 1 ate 5 faca
+  v[i,j]<-v[i,j] * m
+  
+ fimpara
+fimpara
+ 
+para i de 1 ate 5 faca
+ para j de 1 ate 5 faca
+ Escreval(v[i,j])
+ 
+ fimpara
+fimpara
+
+Fimalgoritmo

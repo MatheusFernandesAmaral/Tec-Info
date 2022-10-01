@@ -1,0 +1,454 @@
+
+NOME DO ALUNO:Matheus Fernandes Amaral
+
+
+01) Faça um programa que leia os números de 01 a 16 e faça a seguinte operação: o quadrado e a soma dos números lidos e mostre na tela o resultado.
+(Mostrar na tela quadrado = número por número)
+(Mostrar na tela soma = número por número)
+
+Algoritmo "1"
+Var
+soma,quadr,num:real
+x:inteiro
+
+Inicio
+para x de 1 ate 16 faca]
+soma<-x+x
+Escreval("A soma de ",x," + ",x," = ",soma)
+quadr<-x*x
+
+Escreval("O quadrado de ",x," = ",quadr)
+ Escreval()
+fimpara
+
+
+Fimalgoritmo
+
+02) Construa um programa para apresentar o total da soma obtida das leituras dos números inteiros. Entre 8 e 108
+
+Algoritmo "2"
+
+Var
+soma,x:inteiro
+
+Inicio
+para x de 8 ate 108 faca
+soma<- soma + x
+fimpara
+Escreval("A soma dos numeros de 8 a 108 : ",soma)
+
+
+Fimalgoritmo
+
+03) Elabore um algoritmo, que leia 6 valores inteiros e calcule o produto dos valores lidos.
+
+Algoritmo "3"
+Var
+prod,num:real
+x:inteiro
+Inicio
+prod<-1
+para x de 1 ate 6 faca
+Escreva("Digite um numero : ")
+leia(num)
+prod<-prod*num
+fimpara
+
+Escreva("O produto dos numeros lidos : ",prod)
+
+
+Fimalgoritmo
+
+04) Elabore um programa que leia os números de 21 a 72 e faça a seguinte operação: A soma dos números pares lidos e a soma dos números ímpares. E também a quantidade de valores lidos de pares e ímpares. No final mostrar na tela os resultados.
+
+Algoritmo "4"
+Var
+par,impar,x,i,p:inteiro
+
+Inicio
+para x de 21 ate 72 faca
+
+se x mod 2=0 entao
+par<-par+x
+p<-p+1
+senao
+impar<-impar+x
+i<-i+1
+fimse
+
+fimpara
+
+Escreval("A soma dos pares : ",par)
+Escreval("A quantidade de numeros pares : ",p)
+Escreval()
+Escreval("A soma dos numeros impares : ",impar)
+Escreval("A quantidade dos numeros impares : ",i)
+
+Fimalgoritmo
+
+05) Elabore um programa que leia 20 números e escreva o somatório dos valores lidos e a quantidade de numeros lidos >= 18.
+
+Algoritmo "semnome"
+Var
+soma,cont,num:real
+x:inteiro
+
+Inicio
+para x de 1 ate 20 faca
+
+Escreva("Digite um numero : ")
+leia(num)
+soma<-soma+num
+se num >= 18 entao
+cont<-cont+1
+fimse
+
+fimpara
+
+Escreval()
+Escreval("A soma dos numeros : ",soma)
+Escreval("Os numeros maiores ou igual a 18 : ",cont)
+
+
+Fimalgoritmo
+
+06) Escreva um programa que leia 15 números e escreva a soma,média e quantidade dos valores lidos.
+
+Algoritmo "semnome"
+Var
+soma,num,media:real
+x,qunt:inteiro
+Inicio
+para x de 1 ate 15 faca
+Escreva("Digite um numero : ")
+leia(num)
+soma<-soma+num
+qunt<-qunt+1
+fimpara
+
+media<-soma/qunt
+
+Escreval("A soma dos numeros lidos : ",soma)
+Escreval("A media dos numeros lidos : ",media)
+EScreval("A quantidade de numeros lidos : ",qunt)
+
+
+Fimalgoritmo
+
+07) Elaborar um programa que leia 08 notas de uma turma de alunos através de um vetor e no final imprimir (mostrar) na tela os valores lidos.
+
+Algoritmo "semnome"
+Var
+v:vetor[1..8]de real
+i:inteiro
+
+Inicio
+para i de 1 ate 8 faca
+Escreva("Digite os valores : ")
+leia(v[i])
+
+fimpara
+
+Escreval()
+
+para i de 1 ate 8 faca
+Escreval(v[i])
+fimpara
+
+Fimalgoritmo
+
+08) Construir um programa que leia um grupo de 20 valores que representam as idades das pessoas e depois mostre a soma das idades.
+
+Algoritmo "semnome"
+Var
+v:vetor[1..20]de real
+i,soma:inteiro
+
+Inicio
+para i de 1 ate 20 faca
+Escreva("Digite a idade : ")
+leia(v[i])
+soma<-soma+i 
+
+fimpara
+
+Escreval()
+Escreval("A soma das idades : ",soma)
+
+
+Fimalgoritmo
+
+09) Escrever um programa que leia um vetor de 10 posições de números inteiros e mostre somente os positivos em um novo vetor.
+
+Algoritmo "semnome"
+Var
+v:vetor[1..10]de real
+c:vetor[1..10]de real
+i:inteiro
+
+Inicio
+para i de 1 ate 10 faca
+Escreva("Digite os valores : ")
+leia(v[i])
+
+se v[i] > 0 entao
+c[i]<-v[i]
+
+fimse
+fimpara
+
+Escreval()
+para i de 1 ate 10 faca
+se c[i] > 0 entao
+Escreva(c[i])
+fimse
+
+fimpara
+Fimalgoritmo
+
+10) Fazer um programa que leia 10 números inteiros, distribua os números lidos em dois vetores, sendo um para pares e outro para ímpares, escreva os vetores.
+
+Algoritmo "semnome"
+Var
+v:vetor[1..10]de real
+ip:vetor[1..10]de real
+p:vetor[1..10]de real
+i:inteiro
+
+Inicio
+para i de 1 ate 10 faca
+Escreva("Digite os valores : ")
+leia(v[i])
+
+se i mod 2=0 entao
+p[i]<-v[i]
+senao
+ip[i]<-v[i]
+fimse
+
+fimpara
+
+Escreval()
+
+Escreval("Os valores pares : ")
+para i de 1 ate 10 faca
+
+se p[i]<> 0 entao
+
+Escreval(p[i])
+
+fimse
+fimpara
+
+Escreval()
+EScreval()
+
+Escreval("Os valores impares : ")
+para i de 1 ate 10 faca
+
+se ip[i] <> 0 entao
+
+Escreval(ip[i])
+
+fimse
+
+fimpara
+
+
+Fimalgoritmo
+
+11) Construa um programa que leia um vetor de números inteiros com 20 posições e faça as seguintes operações:
+a) A soma de todos os elementos do vetor;
+b) A soma dos valores pares do vetor;
+c) A soma dos valores ímpares do vetor;
+d) A média da soma dos pares
+e) A média da soma dos impares
+f) A Quantidade de pares;
+g) A quantidade de ímpares;
+h) O maior numero do vetor;
+i) O menor numero do vetor;
+j) A quantidade de números negativos lidos;
+k) A somatório dos números negativos
+Ao final mostras todos os resultados
+
+Algoritmo "semnome"
+Var
+v:vetor[1..20]de real
+i:inteiro
+mediap,mediai,soma,somap,somai,soman,quntp,qunti,quntn,maior,menor:real
+Inicio
+menor<-9999
+para i de 1 ate 20 faca
+Escreva("Digite os valores : ")
+leia(v[i])
+soma<-soma+v[i]
+
+se v[i]>maior entao
+maior<-v[i]
+fimse
+
+se v[i] < menor entao
+menor<-v[i]
+fimse
+
+se v[i] < 0 entao
+quntn<-quntn+1
+soman<-soman+v[i]
+
+fimse
+
+se v[i] mod 2=0 entao
+somap<-somap+v[i]
+quntp<-quntp+1
+senao
+somai<-somai+v[i]
+qunti<-qunti+1
+fimse
+
+fimpara
+
+mediap<-somap/quntp
+mediai<-somai/qunti
+
+Escreval()
+Escreval("A soma de todos  os valores : ",soma)
+Escreval("A soma dos valores pares : ",somap)
+Escreval("A soma dos valores impares : ",somai)
+Escreval()
+Escreval("A media dos valores pares : ",mediap)
+Escreval("A media dos valores impares : ",mediai)
+Escreval()
+Escreval("A quantidade dos pares : ",quntp)
+Escreval("A quantidade dos impares : ",qunti)
+Escreval()
+Escreval("O maior numero do vetor : ",maior)
+Escreval("O menor numero do vetor : ",menor)
+Escreval()
+Escreval("A quantidade de números negativos lidos : ",quntn)
+Escreval("A somatório dos números negativos : ",soman)
+
+Fimalgoritmo
+
+12) A empresa XWZ  com 10 funcionários fez uma análise para descobrir alguns dados de seus funcionários. E deseja saber:
+a) A média de salarial dos funcionários;
+b) A média de idade de seus funcionários;
+c) O maior salário;
+d) Quantidade de funcionários com salário maior ou = a R$ 500,00.
+
+Algoritmo "semnome"
+Var
+v:vetor[1..10]de real
+i:inteiro
+idades,sal,idade,medias,mediai,maior,maiorq:real
+
+Inicio
+para i de 1 ate 10 faca
+Escreva("Digite o salario : ")
+leia(v[i])
+
+sal<-sal+v[i]
+
+se v[i] >= 500 entao
+maiorq<-maiorq+1
+fimse
+
+se v[i]> maior entao
+maior<-v[i]
+fimse
+
+Escreva("Digite a idade : ")
+leia(idade)
+idades<-idades+idade
+
+fimpara
+
+medias<-sal/10
+mediai<-idades/10
+
+Escreval()
+Escreval("A media dos salario : ",medias)
+Escreval("A media das idades : ",mediai)
+Escreval("O maior salario : ",maior)
+Escreval("Quantidade de funvionarios que ganham mais de 500 : ",maiorq)
+
+
+Fimalgoritmo
+
+13) Faça um programa que tenha a seguinte escolha:
+conforme o menu abaixo:
+1 - Para executar a (Media com 2 alunos)
+2 - Para executar a (Média com 4 alunos)
+a) Nome da escola
+a) Nomes do alunos;
+b) As notas que compõem a média;
+c) E a média obtida dos alunos.
+EXECUTAR ESTE PROCEDIMENTO CONFORME O MENU
+
+Algoritmo "semnome"
+Var
+n:vetor[1..2]
+x,n1,n2,soma,z:inteiro
+media:real
+escol,escola,nomes,nome:caracter
+Inicio
+Escreva("Digite o nome da escola ")
+leia(escola)
+
+Escreval()
+Escreval("Digite 2 para media com dois alunos ou")
+Escreval("Digite 4 para media com quatro alunos : ")
+leia(escol)
+
+escolha escol
+
+caso "2"
+para x de 1 ate 2 faca
+Escreval("Media com dois alunos")
+Escreva("Digite o nome do aluno ")
+leia(nome)
+Escreva("Digite a nota 1 :  ")
+leia(n1)
+Escreva("Digite a nota 2 : ")
+leia(n2)
+soma<-n1+n2
+media<-soma/2
+Escreval()
+Escreval("Escola : ",escola)
+Escreval("Aluno : ",nome)
+Escreval("As notas : ",n1,n2)
+Escreva("A media : ",media)
+Escreval()
+leia(z)
+fimpara
+
+
+caso "4"
+Escreval("Media com quatro alunos")
+para x de 1 ate 4 faca
+Escreva("Digite o nome : ")
+leia(nomes)
+Escreva("Digite a nota 1 : ")
+leia(n1)
+Escreva("Digite a nota 2 : ")
+leia(n2)
+
+soma<-n1+n2
+media<-soma/2
+Escreval()
+Escreval("Escola : ",escola)
+Escreval("Aluno : ",nome)
+Escreval("As notas : ",n1,n2)
+Escreva("A media : ",media)
+leia(z)
+
+
+Escreval()
+fimpara
+
+fimescolha
+
+
+
+
+
+Fimalgoritmo
