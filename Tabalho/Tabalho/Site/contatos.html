@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-tr">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body bgcolor="#2E64FE" link="#00FFFF" vlink="#A901DB" alink="#FBFBEF" >
+<font face="BankGothic LT BT">
+	<h3 align="center">Aqui esta um pequeno formulario para entrar em contato conosco</h3>
+	<table align="center">
+	<form method="POST" action="contato.php" name="contato">
+	
+		<tr>
+			<td><label for="name">Nome:</label></td>
+			<td><input type="text" id="name" name="name" placeholder="Digite seu nome"/>
+		</tr>
+		
+		<tr>
+			<td><label for="tel">Telefone:</label></td>
+			<td><input type="number" id="tel" name="tel" placeholder="Digite seu número"/></td>
+		</tr>
+		
+		<tr>
+			<td><label for="email">E-mail</label></td>
+			<td><input type="text" id="email" name="email" required="required" placeholder="Digite seu E-mail"/></td>
+		</tr>
+
+		<tr>
+			<td><label for="texto">Deixe seu feedback:</label></td>
+			<td><textarea for="texto" cols="50" rows="10"></textarea></td>
+		</tr>
+		
+		<tr>
+			<td><input type="reset" value="Limpar">  <input type="submit" value="Salvar"></td>
+		</tr>
+	
+			
+</font>
+	</table>
+</body>
+</html>

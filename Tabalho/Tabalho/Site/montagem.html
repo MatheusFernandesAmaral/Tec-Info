@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body bgcolor="#2E64FE" link="#00FFFF" vlink="#A901DB" alink="#FBFBEF" >
+<font face="BankGothic LT BT">
+
+<h3 align="center">Monte seu computador com as peças de sua escolha. Preencha os campos de obrigatórios para que a entrega seja feita sem dificuldades</h3>
+<br/>
+
+<form action="montar.php" method="POST">
+
+
+<fieldset>
+<legend>Dados Pessoais</legend>
+<table align="center">	
+
+	<tr>
+		<td><label for="name">Nome do seu PC:</label>
+			<input type="text" name="name" id="name"/>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><label for="name1">Seu nome:&emsp;&nbsp;&emsp;&emsp;</label>
+			<input type="text" name="name1" id="name1"/>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><label for="email">Seu E-mail:&emsp;&nbsp;&nbsp;&nbsp;</label>
+			<input type="text" name="email" id="email" required="required"/>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><label for="endereco">Endereço:&emsp;&emsp;&emsp;&nbsp;<label>
+			<input type="text" name="endereco" id="endereco" required="required"/>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><label for="cidade">Cidade:&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;</label>
+			<select name="cidade">
+				<optgroup label="Rio Grande do Sul">
+					<option value="poa">Porto Alegre</option>
+					<option value="alvo">Alvorada</option>
+					<option value="cano">Canoas</option>
+					<option value="bage">Bagé</option>
+				</optgroup>
+				
+				<optgroup label="São Paulo">
+					<option value="camp">Campinas</option>
+					<option value="gua">Guarulhos</option>
+					<option value="osasco">Osasco</option>
+					<option value="sorocaba">Sorocaba</option>
+				</optgroup>
+				
+				<optgroup label="Rio de Janeiro">
+					<option value="nit">Niterói</option>
+					<option value="ostras">Rio das Ostras</option>
+					<option value="redonda">Volta Redonda</option>
+					<option value="resende">Resende</option>
+				</optgroup>
+				
+				<optgroup label="Santa Catarina">
+					<option value="flor">Florianópolis</option>
+					<option value="chape">Chapecó</option>
+					<option value="blumenau">Blumenau</option>
+					<option value="joinvile">Joinville</option>
+				</optgroup>
+			</select>
+		</tr>
+</table>
+</fieldset>
+<br/>
+
+<fieldset>
+<legend>Gabinetes</legend>
+<table align="center">
+
+	<tr>
+		<td><input type="radio" name="gabinete" id="gabinete" value="sim"/>
+			<label for="gabinete">Assassin's (R$300,00) <img src="../imagens/Gabinetes/gabinete.png" height="100" width="100"></label>
+		</td>
+		
+		<td><input type="radio" name="gabinete" id="gabinete" value="sim"/>
+			<label for="gabinete">Bluecase Gamer (R$200,00)<img src="../imagens/Gabinetes/bluecase.png" height="100" width="100"></label>
+		</td>
+		
+		<td><input type="radio" name="gabinete" id="gabinete" value="sim"/>
+			<label for="gabinete">XIGMATEK MACH III (R$350,00) <img src="../imagens/Gabinetes/xigmatek.png" height="100" width="100"></label>
+		</td>
+		
+		<td><input type="radio" name="gabinete" id="gabinete" value="sim"/>
+			<label for="gabinete">AEROCOOL AERO 500 (R$150,00) <img src="../imagens/Gabinetes/aerocool.png" height="100" width="100"></label>
+		</td>
+	<tr>
+</table>
+</fieldset>
+<br/>
+
+<fieldset>
+<legend>Placas mãe</legend>
+<table align="center">
+	
+	<tr>
+		<td><input type="radio" name="placa" id="placa" value="sim"/>
+			<label for="placa">AORUS GA-AX370 (R$1200,00) <img src="../imagens/Placas_mae/orus.png" height="100" width="100"></label>
+		</td>
+	
+		<td><input type="radio" name="placa" id="placa" value="sim"/>
+			<label for="placa">GA-AB350 GAMING (R$1000,00) <img src="../imagens/Placas_mae/GA-AB350-GAMING.png" height="100" width="100"><label>
+		</td>
+		
+		<td><input type="radio" name="placa" id="placa" value="sim"/>
+			<label for="placa">ROG MAXIMUS VII_Ranger (R$1300,00) <img src="../imagens/Placas_mae/ROG_MAXIMUS_VII_Ranger.png" height="100" width="100"><label>
+		</td>
+		
+		<td><input type="radio" name="placa" id="placa" value="sim"/>
+			<label for="placa">ROG STRIX-Z270G GAMING (R$1500,00) <img src="../imagens/Placas_mae/ROG-STRIX-Z270G-GAMING.png" height="100" width="100"><label>
+		</td>
+	</tr>
+</table>
+</fieldset>
+<br/>
+
+<fieldset>
+<legend>Hd's</legend>
+<table align="center">
+
+	<tr>
+		<td><input type="radio" name="hd" id="hd" value="sim"/>
+			<label for="hd">HD 1T (R$700,00) <img src="../imagens/Memorias/hd1.png" height="100" width="100"></label>
+		</td>
+		
+		<td><input type="radio" name="hd" id="hd" value="sim"/>
+			<label for="hd">HD 500G (R$500,00) <img src="../imagens/Memorias/hd500.png" height="100" width="100"></label>
+		</td>
+	</tr>
+</table>
+</fieldset>
+<br/>
+
+<fieldset>
+<legend>Memórioa RAM</legend>
+<table align="center">
+	
+	<tr>
+		<td><input type="radio" name="ram" id="ram" value="sim"/>
+			<label for="ram">Memoria Ram 4G (R$200,00) <img src="../imagens/Memorias/ram4.png" height="100" width="100"></label>
+		<td>
+		
+		<td><input type="radio" name="ram" id="ram" value="sim"/>
+			<label for="ram">Memoria Ram 8G (R$300,00) <img src="../imagens/Memorias/ram8.png" height="100" width="100"></label>
+		<td>
+	</tr>
+</table>
+</fieldset>
+<br/>
+
+<fieldset>
+<legend>Processadores</legend>
+<table align="center">
+
+	<tr>
+		<td><input type="radio" name="pro" id="pro" value="sim"/>
+			<label for="pro">Intel CORE I5 (R$500,00) <img src="../imagens/Processadores/i5.png" height="100" width="100"></label>
+		</td>
+		
+		<td><input type="radio" name="pro" id="pro" value="sim"/>
+			<label for="pro">Intel CORE I7 (R$850,00) <img src="../imagens/Processadores/i7.png" height="100" width="100"></label>
+		</td>
+		
+		<td><input type="radio" name="pro" id="pro" value="sim"/>
+			<label for="pro">AMD A-10 (R$499,00) <img src="../imagens/Processadores/a10.png" height="100" width="100"></label>
+		</td>
+		
+		<td><input type="radio" name="pro" id="pro" value="sim"/>
+			<label for="pro">AMD FX-8300 (R$900,00) <img src="../imagens/Processadores/fx.png" height="100" width="100"></label>
+		</td>
+	</tr>
+</table>
+</fieldset>
+<br/>
+
+<fieldset>
+<legend>Placas de video</legend>
+<table align="center">
+
+	<tr>
+		<td><input type="radio" name="video" id="video" value="sim"/>
+			<label for="video">GTX 1080 (R$950,00) <img src="../imagens/Placa_video/1080.png" height="100" width="100"></label>
+		</td>
+		
+		<td><input type="radio" name="video" id="video" value="sim"/>
+			<label for="video">GTX 1050 (R$800,00) <img src="../imagens/Placa_video/1050.png" height="100" width="100"></label>
+		</td>
+		
+		<td><input type="radio" name="video" id="video" value="sim"/>
+			<label for="video">Radeon R9 290X (R$750,00) <img src="../imagens/Placa_video/radeon.png" height="100" width="100"></label>
+		</td>
+		
+		<td><input type="radio" name="video" id="video" value="sim"/>
+			<label for="video">RADEON RX 560 (R$800,00) <img src="../imagens/Placa_video/radeon1.png" height="100" width="100"></label>
+		</td>
+	</tr>
+</table>
+</fieldset>
+<br/>
+
+<fieldset>
+<legend>Fontes</legend>
+<table align="center">
+	
+	<tr>
+		<td><input type="radio" name="fonte" id="fonte" value="sim"/>
+			<label for="fonte">AX 1500i (R$1000,00) <img src="../imagens/Fontes/ax1500.png" height="100" width="100"></label>
+		</td>
+		
+		<td><input type="radio" name="fonte" id="fonte" value="sim"/>
+			<label for="fonte">CX 600M (R$650,00) <img src="../imagens/Fontes/cx600m.png" height="100" width="100"></label>
+		</td>
+		
+		<td><input type="radio" name="fonte" id="fonte" value="sim"/>
+			<label for="fonte">TX 850 (R$850,00) <img src="../imagens/Fontes/tx850.png" height="100" width="100"></label>
+		</td>
+		
+		<td><input type="radio" name="fonte" id="fonte" value="sim"/>
+			<label for="fonte">RM 650X (R$700,00) <img src="../imagens/Fontes/rm650x.png" height="100" width="100"></label>
+		</td>
+	</tr>
+</table>
+</fieldset>
+<br/>
+
+<table align="center">
+
+	<tr>
+		<td><input type="reset" name="reset" value="Limpar"/></td>
+		<td><input type="submit" name="submit" value="Efetuar compra"/></td>
+	</tr>
+</table>
+	
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</font>
+</body>
+</html>
